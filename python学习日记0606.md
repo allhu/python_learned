@@ -35,3 +35,15 @@
     #replace this for solution
     return [x for x in data if data.count(x) > 1]
 
+#####学习摘要
+
+刚开始是想要用if条件来做判断：
+
+- 如果X == Y，那么就list.remove（X）。但这样的做法似乎行不通。
+
+后来再github上发现一位开发者已经提供了一个答案，于是照抄下来，顺便学习一下。
+
+	def checkio(data):
+        return [x for x in data if data.count(x) > 1]
+
+此处是把所有重复的字符都打印出来，因此[1,1,2,2,3,4,5,5]会输出对应的[1,2,5]
