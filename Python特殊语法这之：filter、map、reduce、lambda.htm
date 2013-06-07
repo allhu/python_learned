@@ -1,0 +1,1121 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns:mv="http://macVmlSchemaUri" xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta name=±êÌâ content="">
+<meta name=¹Ø¼ü´Ê content="">
+<meta http-equiv=Content-Type content="text/html; charset=x-mac-chinesesimp">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 14">
+<meta name=Originator content="Microsoft Word 14">
+<link rel=File-List
+href="Python%E7%89%B9%E6%AE%8A%E8%AF%AD%E6%B3%95%E8%BF%99%E4%B9%8B%EF%BC%9Afilter%E3%80%81map%E3%80%81reduce%E3%80%81lambda.files/filelist.xml">
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>allhu</o:Author>
+  <o:LastAuthor>allhu</o:LastAuthor>
+  <o:Revision>1</o:Revision>
+  <o:TotalTime>0</o:TotalTime>
+  <o:Created>2013-06-07T15:09:00Z</o:Created>
+  <o:LastSaved>2013-06-07T15:09:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>386</o:Words>
+  <o:Characters>2205</o:Characters>
+  <o:Lines>18</o:Lines>
+  <o:Paragraphs>5</o:Paragraphs>
+  <o:CharactersWithSpaces>2586</o:CharactersWithSpaces>
+  <o:Version>14.0</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+<link rel=themeData
+href="Python%E7%89%B9%E6%AE%8A%E8%AF%AD%E6%B3%95%E8%BF%99%E4%B9%8B%EF%BC%9Afilter%E3%80%81map%E3%80%81reduce%E3%80%81lambda.files/themedata.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:TrackMoves/>
+  <w:TrackFormatting/>
+  <w:PunctuationKerning/>
+  <w:DrawingGridVerticalSpacing>10 pt</w:DrawingGridVerticalSpacing>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>2</w:DisplayVerticalDrawingGridEvery>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>ZH-CN</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:SpaceForUL/>
+   <w:BalanceSingleByteDoubleByteWidth/>
+   <w:DoNotLeaveBackslashAlone/>
+   <w:ULTrailSpace/>
+   <w:DoNotExpandShiftReturn/>
+   <w:AdjustLineHeightInTable/>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:EnableOpenTypeKerning/>
+   <w:DontFlipMirrorIndents/>
+   <w:OverrideTableStyleHps/>
+   <w:UseFELayout/>
+  </w:Compatibility>
+  <w:NoLineBreaksAfter Lang="JA">$([{¡ê£¤¡¤¡®¡°¡´¡¶¡¸¡º¡¾¡²¡¼&#12317;&#65113;&#65115;&#65117;¡ç£¨£®£Û£û&#65505;&#65509;</w:NoLineBreaksAfter>
+  <w:NoLineBreaksBefore Lang="JA">!%),.:;&gt;?]}¡é¡§¡ã¡¤¡¦¡¥&#8213;¡¬¡¯¡±ÿ¡ë¡ä¡å&#8250;¡æ¡Ã¡¢¡£¡¨¡µ¡·¡¹¡»¡¿¡³¡½&#12318;¦á¦ã¦ç¦å¦ë&#65114;&#65116;&#65118;£¡£¢£¥£§£©£¬£®£º£»£¿£İ£à£ü£ı&#65374;&#65504;</w:NoLineBreaksBefore>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"
+  DefSemiHidden="true" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="276">
+  <w:LsdException Locked="false" Priority="0" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 9"/>
+  <w:LsdException Locked="false" Priority="35" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" Priority="10" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" Priority="11" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" Priority="22" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" Priority="59" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Table Grid"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:Times;
+	panose-1:2 0 5 0 0 0 0 0 0 0;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:ËÎÌå;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:80;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 680460288 22 0 262145 0;}
+@font-face
+	{font-family:ËÎÌå;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:80;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 680460288 22 0 262145 0;}
+@font-face
+	{font-family:"\@ËÎÌå";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:80;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 680460288 22 0 262145 0;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:-536870145 1073743103 0 0 415 0;}
+@font-face
+	{font-family:"Heiti SC Light";
+	panose-1:2 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:80;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:-2147483601 135135306 16 0 262144 0;}
+@font-face
+	{font-family:"\@Heiti SC Light";
+	panose-1:2 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:80;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:-2147483601 135135306 16 0 262144 0;}
+@font-face
+	{font-family:"Microsoft Tai Le";
+	panose-1:2 11 5 2 4 2 4 2 2 3;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 1073741824 0 1 0;}
+@font-face
+	{font-family:"Mongolian Baiti";
+	panose-1:3 0 5 0 0 0 0 0 0 0;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:-2147483613 0 131072 0 1 0;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:12.0pt;
+	font-family:Cambria;
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:ËÎÌå;
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-font-kerning:1.0pt;}
+h2
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"±êÌâ 2×Ö·û";
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:Times;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	font-weight:bold;}
+p
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Times;
+	mso-fareast-font-family:ËÎÌå;
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Times New Roman";}
+span.2
+	{mso-style-name:"±êÌâ 2×Ö·û";
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"±êÌâ 2";
+	mso-ansi-font-size:18.0pt;
+	mso-bidi-font-size:18.0pt;
+	font-family:Times;
+	mso-ascii-font-family:Times;
+	mso-hansi-font-family:Times;
+	mso-font-kerning:0pt;
+	font-weight:bold;}
+span.apple-converted-space
+	{mso-style-name:apple-converted-space;
+	mso-style-unhide:no;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-family:Cambria;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+ /* Page Definitions */
+@page
+	{mso-page-border-surround-header:no;
+	mso-page-border-surround-footer:no;}
+@page WordSection1
+	{size:595.0pt 842.0pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;
+	mso-header-margin:42.55pt;
+	mso-footer-margin:49.6pt;
+	mso-paper-source:0;
+	layout-grid:21.15pt;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+table.MsoNormalTable
+	{mso-style-name:ÆÕÍ¨±í¸ñ;
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:Cambria;
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;
+	mso-font-kerning:1.0pt;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1026"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=ZH-CN style='tab-interval:21.0pt;text-justify-trim:punctuation'>
+
+<div class=WordSection1 style='layout-grid:21.15pt'>
+
+<p class=MsoNormal align=left style='margin-bottom:7.5pt;text-align:left;
+mso-pagination:widow-orphan;mso-outline-level:2'><span lang=EN-US
+style='font-size:15.0pt;font-family:Tahoma;mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:#3A3A3A;mso-font-kerning:0pt'>Python</span><span
+style='font-size:15.0pt;font-family:"Heiti SC Light";mso-hansi-font-family:
+"Heiti SC Light";mso-bidi-font-family:"Heiti SC Light";color:#3A3A3A;
+mso-font-kerning:0pt'>ÌØÊâÓï·¨ÕâÖ®</span><span style='font-size:15.0pt;font-family:
+"Heiti SC Light";mso-ascii-font-family:"Microsoft Tai Le";mso-hansi-font-family:
+"Microsoft Tai Le";mso-bidi-font-family:"Microsoft Tai Le";color:#3A3A3A;
+mso-font-kerning:0pt'>£º</span><span lang=EN-US style='font-size:15.0pt;
+font-family:Tahoma;mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:#3A3A3A;mso-font-kerning:0pt'>filter</span><span
+style='font-size:15.0pt;font-family:"Heiti SC Light";mso-ascii-font-family:
+"Mongolian Baiti";mso-hansi-font-family:"Mongolian Baiti";mso-bidi-font-family:
+"Mongolian Baiti";color:#3A3A3A;mso-font-kerning:0pt'>¡¢</span><span lang=EN-US
+style='font-size:15.0pt;font-family:Tahoma;mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:#3A3A3A;mso-font-kerning:0pt'>map</span><span
+style='font-size:15.0pt;font-family:"Heiti SC Light";mso-ascii-font-family:
+"Mongolian Baiti";mso-hansi-font-family:"Mongolian Baiti";mso-bidi-font-family:
+"Mongolian Baiti";color:#3A3A3A;mso-font-kerning:0pt'>¡¢</span><span lang=EN-US
+style='font-size:15.0pt;font-family:Tahoma;mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:#3A3A3A;mso-font-kerning:0pt'>reduce</span><span
+style='font-size:15.0pt;font-family:"Heiti SC Light";mso-ascii-font-family:
+"Mongolian Baiti";mso-hansi-font-family:"Mongolian Baiti";mso-bidi-font-family:
+"Mongolian Baiti";color:#3A3A3A;mso-font-kerning:0pt'>¡¢</span><span lang=EN-US
+style='font-size:15.0pt;font-family:Tahoma;mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:#3A3A3A;mso-font-kerning:0pt'>lambda<o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'>Python</span><span
+style='font-size:10.5pt;font-family:ËÎÌå;mso-ascii-font-family:Tahoma;mso-fareast-font-family:
+ËÎÌå;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Tahoma;
+mso-bidi-font-family:"Times New Roman";color:#454545;mso-font-kerning:0pt'>ÄÚÖÃÁËÒ»Ğ©·Ç³£ÓĞÈ¤µ«·Ç³£ÓĞÓÃµÄº¯Êı£¬³ä·ÖÌåÏÖÁË</span><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'>Python</span><span
+style='font-size:10.5pt;font-family:ËÎÌå;mso-ascii-font-family:Tahoma;mso-fareast-font-family:
+ËÎÌå;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Tahoma;
+mso-bidi-font-family:"Times New Roman";color:#454545;mso-font-kerning:0pt'>µÄÓïÑÔ÷ÈÁ¦£¡</span><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><b><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'>filter(function,
+sequence)</span></b><b><span style='font-size:10.5pt;font-family:ËÎÌå;mso-ascii-font-family:
+Tahoma;mso-fareast-font-family:ËÎÌå;mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:Tahoma;mso-bidi-font-family:"Times New Roman";color:#454545;
+mso-font-kerning:0pt'>£º</span></b><span style='font-size:10.5pt;font-family:
+ËÎÌå;mso-ascii-font-family:Tahoma;mso-fareast-font-family:ËÎÌå;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:Tahoma;mso-bidi-font-family:"Times New Roman";
+color:#454545;mso-font-kerning:0pt'>¶Ô</span><span lang=EN-US style='font-size:
+10.5pt;font-family:Tahoma;mso-bidi-font-family:"Times New Roman";color:#454545;
+mso-font-kerning:0pt'>sequence</span><span style='font-size:10.5pt;font-family:
+ËÎÌå;mso-ascii-font-family:Tahoma;mso-fareast-font-family:ËÎÌå;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:Tahoma;mso-bidi-font-family:"Times New Roman";
+color:#454545;mso-font-kerning:0pt'>ÖĞµÄ</span><span lang=EN-US style='font-size:
+10.5pt;font-family:Tahoma;mso-bidi-font-family:"Times New Roman";color:#454545;
+mso-font-kerning:0pt'>item</span><span style='font-size:10.5pt;font-family:
+ËÎÌå;mso-ascii-font-family:Tahoma;mso-fareast-font-family:ËÎÌå;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:Tahoma;mso-bidi-font-family:"Times New Roman";
+color:#454545;mso-font-kerning:0pt'>ÒÀ´ÎÖ´ĞĞ</span><span lang=EN-US
+style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:"Times New Roman";
+color:#454545;mso-font-kerning:0pt'>function(item)</span><span
+style='font-size:10.5pt;font-family:ËÎÌå;mso-ascii-font-family:Tahoma;mso-fareast-font-family:
+ËÎÌå;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Tahoma;
+mso-bidi-font-family:"Times New Roman";color:#454545;mso-font-kerning:0pt'>£¬½«Ö´ĞĞ½á¹ûÎª</span><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'>True</span><span
+style='font-size:10.5pt;font-family:ËÎÌå;mso-ascii-font-family:Tahoma;mso-fareast-font-family:
+ËÎÌå;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Tahoma;
+mso-bidi-font-family:"Times New Roman";color:#454545;mso-font-kerning:0pt'>µÄ</span><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'>item</span><span
+style='font-size:10.5pt;font-family:ËÎÌå;mso-ascii-font-family:Tahoma;mso-fareast-font-family:
+ËÎÌå;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Tahoma;
+mso-bidi-font-family:"Times New Roman";color:#454545;mso-font-kerning:0pt'>×é³ÉÒ»¸ö</span><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'>List/String/Tuple</span><span
+style='font-size:10.5pt;font-family:ËÎÌå;mso-ascii-font-family:Tahoma;mso-fareast-font-family:
+ËÎÌå;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Tahoma;
+mso-bidi-font-family:"Times New Roman";color:#454545;mso-font-kerning:0pt'>£¨È¡¾öÓÚ</span><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'>sequence</span><span
+style='font-size:10.5pt;font-family:ËÎÌå;mso-ascii-font-family:Tahoma;mso-fareast-font-family:
+ËÎÌå;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Tahoma;
+mso-bidi-font-family:"Times New Roman";color:#454545;mso-font-kerning:0pt'>µÄÀàĞÍ£©·µ»Ø£º</span><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'>&gt;&gt;&gt; <span
+class=SpellE><span class=GramE>def</span></span> f(x): return x % 2 != 0 and x
+% 3 != 0<br>
+&gt;&gt;&gt; filter(f, range(2, 25))<br>
+[5, 7, 11, 13, 17, 19, 23]<o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'>&gt;&gt;&gt; <span
+class=SpellE><span class=GramE>def</span></span> f(x): return x != 'a'<br>
+&gt;&gt;&gt; filter(f, &quot;<span class=SpellE>abcdef</span>&quot;)<br>
+'<span class=SpellE>bcdef</span>'<o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><b><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'>map(function, sequence) </span></b><b><span
+style='font-size:10.5pt;font-family:ËÎÌå;mso-ascii-font-family:Tahoma;mso-fareast-font-family:
+ËÎÌå;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Tahoma;
+mso-bidi-font-family:"Times New Roman";color:#454545;mso-font-kerning:0pt'>£º</span></b><span
+style='font-size:10.5pt;font-family:ËÎÌå;mso-ascii-font-family:Tahoma;mso-fareast-font-family:
+ËÎÌå;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Tahoma;
+mso-bidi-font-family:"Times New Roman";color:#454545;mso-font-kerning:0pt'>¶Ô</span><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'>sequence</span><span
+style='font-size:10.5pt;font-family:ËÎÌå;mso-ascii-font-family:Tahoma;mso-fareast-font-family:
+ËÎÌå;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Tahoma;
+mso-bidi-font-family:"Times New Roman";color:#454545;mso-font-kerning:0pt'>ÖĞµÄ</span><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'>item</span><span
+style='font-size:10.5pt;font-family:ËÎÌå;mso-ascii-font-family:Tahoma;mso-fareast-font-family:
+ËÎÌå;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Tahoma;
+mso-bidi-font-family:"Times New Roman";color:#454545;mso-font-kerning:0pt'>ÒÀ´ÎÖ´ĞĞ</span><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'>function(item)</span><span
+style='font-size:10.5pt;font-family:ËÎÌå;mso-ascii-font-family:Tahoma;mso-fareast-font-family:
+ËÎÌå;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Tahoma;
+mso-bidi-font-family:"Times New Roman";color:#454545;mso-font-kerning:0pt'>£¬¼ûÖ´ĞĞ½á¹û×é³ÉÒ»¸ö</span><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'>List</span><span
+style='font-size:10.5pt;font-family:ËÎÌå;mso-ascii-font-family:Tahoma;mso-fareast-font-family:
+ËÎÌå;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Tahoma;
+mso-bidi-font-family:"Times New Roman";color:#454545;mso-font-kerning:0pt'>·µ»Ø£º</span><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'>&gt;&gt;&gt; <span
+class=SpellE><span class=GramE>def</span></span> cube(x): return x*x*x<br>
+&gt;&gt;&gt; map(cube, range(1, 11))<br>
+[1, 8, 27, 64, 125, 216, 343, 512, 729, 1000]<o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'>&gt;&gt;&gt; <span
+class=SpellE><span class=GramE>def</span></span> cube(x) : return x + x<br>
+...<br>
+&gt;&gt;&gt; map(cube , &quot;<span class=SpellE>abcde</span>&quot;)<br>
+['<span class=SpellE>aa</span>', 'bb', 'cc', '<span class=SpellE>dd</span>', '<span
+class=SpellE>ee</span>']<o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><span
+style='font-size:10.5pt;font-family:ËÎÌå;mso-ascii-font-family:Tahoma;mso-fareast-font-family:
+ËÎÌå;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Tahoma;
+mso-bidi-font-family:"Times New Roman";color:#454545;mso-font-kerning:0pt'>ÁíÍâ</span><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'>map</span><span
+style='font-size:10.5pt;font-family:ËÎÌå;mso-ascii-font-family:Tahoma;mso-fareast-font-family:
+ËÎÌå;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Tahoma;
+mso-bidi-font-family:"Times New Roman";color:#454545;mso-font-kerning:0pt'>Ò²Ö§³Ö¶à¸ö</span><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'>sequence</span><span
+style='font-size:10.5pt;font-family:ËÎÌå;mso-ascii-font-family:Tahoma;mso-fareast-font-family:
+ËÎÌå;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Tahoma;
+mso-bidi-font-family:"Times New Roman";color:#454545;mso-font-kerning:0pt'>£¬Õâ¾ÍÒªÇó</span><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'>function</span><span
+style='font-size:10.5pt;font-family:ËÎÌå;mso-ascii-font-family:Tahoma;mso-fareast-font-family:
+ËÎÌå;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Tahoma;
+mso-bidi-font-family:"Times New Roman";color:#454545;mso-font-kerning:0pt'>Ò²Ö§³ÖÏàÓ¦ÊıÁ¿µÄ²ÎÊıÊäÈë£º</span><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'>&gt;&gt;&gt; <span
+class=SpellE><span class=GramE>def</span></span> add(x, y): return <span
+class=SpellE>x+y</span><br>
+&gt;&gt;&gt; map(add, range(8), range(8))<br>
+[0, 2, 4, 6, 8, 10, 12, 14]<o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><b><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'>reduce(function,
+sequence, <span class=SpellE>starting_value</span>)</span></b><b><span
+style='font-size:10.5pt;font-family:ËÎÌå;mso-ascii-font-family:Tahoma;mso-fareast-font-family:
+ËÎÌå;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Tahoma;
+mso-bidi-font-family:"Times New Roman";color:#454545;mso-font-kerning:0pt'>£º</span></b><span
+style='font-size:10.5pt;font-family:ËÎÌå;mso-ascii-font-family:Tahoma;mso-fareast-font-family:
+ËÎÌå;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Tahoma;
+mso-bidi-font-family:"Times New Roman";color:#454545;mso-font-kerning:0pt'>¶Ô</span><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'>sequence</span><span
+style='font-size:10.5pt;font-family:ËÎÌå;mso-ascii-font-family:Tahoma;mso-fareast-font-family:
+ËÎÌå;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Tahoma;
+mso-bidi-font-family:"Times New Roman";color:#454545;mso-font-kerning:0pt'>ÖĞµÄ</span><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'>item</span><span
+style='font-size:10.5pt;font-family:ËÎÌå;mso-ascii-font-family:Tahoma;mso-fareast-font-family:
+ËÎÌå;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Tahoma;
+mso-bidi-font-family:"Times New Roman";color:#454545;mso-font-kerning:0pt'>Ë³Ğòµü´úµ÷ÓÃ</span><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'>function</span><span
+style='font-size:10.5pt;font-family:ËÎÌå;mso-ascii-font-family:Tahoma;mso-fareast-font-family:
+ËÎÌå;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Tahoma;
+mso-bidi-font-family:"Times New Roman";color:#454545;mso-font-kerning:0pt'>£¬Èç¹ûÓĞ</span><span
+class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:Tahoma;
+mso-bidi-font-family:"Times New Roman";color:#454545;mso-font-kerning:0pt'>starting_value</span></span><span
+style='font-size:10.5pt;font-family:ËÎÌå;mso-ascii-font-family:Tahoma;mso-fareast-font-family:
+ËÎÌå;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Tahoma;
+mso-bidi-font-family:"Times New Roman";color:#454545;mso-font-kerning:0pt'>£¬»¹¿ÉÒÔ×÷Îª³õÊ¼Öµµ÷ÓÃ£¬ÀıÈç¿ÉÒÔÓÃÀ´¶Ô</span><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'>List</span><span
+style='font-size:10.5pt;font-family:ËÎÌå;mso-ascii-font-family:Tahoma;mso-fareast-font-family:
+ËÎÌå;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Tahoma;
+mso-bidi-font-family:"Times New Roman";color:#454545;mso-font-kerning:0pt'>ÇóºÍ£º</span><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'>&gt;&gt;&gt; <span
+class=SpellE>def</span> add(<span class=SpellE>x,y</span>): return x + y<br>
+&gt;&gt;&gt; reduce(add, range(1, 11))<br>
+55 </span><span style='font-size:10.5pt;font-family:ËÎÌå;mso-ascii-font-family:
+Tahoma;mso-fareast-font-family:ËÎÌå;mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:Tahoma;mso-bidi-font-family:"Times New Roman";color:#454545;
+mso-font-kerning:0pt'>£¨×¢£º</span><span lang=EN-US style='font-size:10.5pt;
+font-family:Tahoma;mso-bidi-font-family:"Times New Roman";color:#454545;
+mso-font-kerning:0pt'>1+2+3+4+5+6+7+8+9+10</span><span style='font-size:10.5pt;
+font-family:ËÎÌå;mso-ascii-font-family:Tahoma;mso-fareast-font-family:ËÎÌå;
+mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'>£©</span><span lang=EN-US
+style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:"Times New Roman";
+color:#454545;mso-font-kerning:0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'>&gt;&gt;&gt; reduce(add,
+range(1, 11), 20)<br>
+75 </span><span style='font-size:10.5pt;font-family:ËÎÌå;mso-ascii-font-family:
+Tahoma;mso-fareast-font-family:ËÎÌå;mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:Tahoma;mso-bidi-font-family:"Times New Roman";color:#454545;
+mso-font-kerning:0pt'>£¨×¢£º</span><span lang=EN-US style='font-size:10.5pt;
+font-family:Tahoma;mso-bidi-font-family:"Times New Roman";color:#454545;
+mso-font-kerning:0pt'>1+2+3+4+5+6+7+8+9+10+20</span><span style='font-size:
+10.5pt;font-family:ËÎÌå;mso-ascii-font-family:Tahoma;mso-fareast-font-family:
+ËÎÌå;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Tahoma;
+mso-bidi-font-family:"Times New Roman";color:#454545;mso-font-kerning:0pt'>£©</span><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><b><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'>lambda</span></b><b><span
+style='font-size:10.5pt;font-family:ËÎÌå;mso-ascii-font-family:Tahoma;mso-fareast-font-family:
+ËÎÌå;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Tahoma;
+mso-bidi-font-family:"Times New Roman";color:#454545;mso-font-kerning:0pt'>£º</span></b><span
+style='font-size:10.5pt;font-family:ËÎÌå;mso-ascii-font-family:Tahoma;mso-fareast-font-family:
+ËÎÌå;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Tahoma;
+mso-bidi-font-family:"Times New Roman";color:#454545;mso-font-kerning:0pt'>ÕâÊÇ</span><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'>Python</span><span
+style='font-size:10.5pt;font-family:ËÎÌå;mso-ascii-font-family:Tahoma;mso-fareast-font-family:
+ËÎÌå;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Tahoma;
+mso-bidi-font-family:"Times New Roman";color:#454545;mso-font-kerning:0pt'>Ö§³ÖÒ»ÖÖÓĞÈ¤µÄÓï·¨£¬ËüÔÊĞíÄã¿ìËÙ¶¨Òåµ¥ĞĞµÄ×îĞ¡º¯Êı£¬ÀàËÆÓë</span><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'>C</span><span
+style='font-size:10.5pt;font-family:ËÎÌå;mso-ascii-font-family:Tahoma;mso-fareast-font-family:
+ËÎÌå;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Tahoma;
+mso-bidi-font-family:"Times New Roman";color:#454545;mso-font-kerning:0pt'>ÓïÑÔÖĞµÄºê£¬ÕâĞ©½Ğ×ö</span><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'>lambda</span><span
+style='font-size:10.5pt;font-family:ËÎÌå;mso-ascii-font-family:Tahoma;mso-fareast-font-family:
+ËÎÌå;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Tahoma;
+mso-bidi-font-family:"Times New Roman";color:#454545;mso-font-kerning:0pt'>µÄº¯Êı£¬ÊÇ´Ó</span><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'>LISP</span><span
+style='font-size:10.5pt;font-family:ËÎÌå;mso-ascii-font-family:Tahoma;mso-fareast-font-family:
+ËÎÌå;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Tahoma;
+mso-bidi-font-family:"Times New Roman";color:#454545;mso-font-kerning:0pt'>½èÓÃÀ´µÄ£¬¿ÉÒÔÓÃÔÚÈÎºÎĞèÒªº¯ÊıµÄµØ·½£º</span><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'><br>
+&gt;&gt;&gt; g = lambda x: x * 2&nbsp;<br>
+&gt;&gt;&gt; g(3)<br>
+6<br>
+&gt;&gt;&gt; (lambda x: x * 2)(3)&nbsp;<br>
+6<o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'>python</span><span
+style='font-size:10.5pt;font-family:ËÎÌå;mso-ascii-font-family:Tahoma;mso-fareast-font-family:
+ËÎÌå;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Tahoma;
+mso-bidi-font-family:"Times New Roman";color:#454545;mso-font-kerning:0pt'>ÖĞµÄ</span><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'>reduce</span><span
+style='font-size:10.5pt;font-family:ËÎÌå;mso-ascii-font-family:Tahoma;mso-fareast-font-family:
+ËÎÌå;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Tahoma;
+mso-bidi-font-family:"Times New Roman";color:#454545;mso-font-kerning:0pt'>ÄÚ½¨º¯ÊıÊÇÒ»¸ö¶şÔª²Ù×÷º¯Êı£¬ËûÓÃÀ´½«Ò»¸öÊı¾İ¼¯ºÏ£¨Á´±í£¬Ôª×éµÈ£©ÖĞµÄËùÓĞÊı¾İ½øĞĞÏÂÁĞ²Ù×÷£ºÓÃ´«¸ø</span><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'>reduce</span><span
+style='font-size:10.5pt;font-family:ËÎÌå;mso-ascii-font-family:Tahoma;mso-fareast-font-family:
+ËÎÌå;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Tahoma;
+mso-bidi-font-family:"Times New Roman";color:#454545;mso-font-kerning:0pt'>ÖĞµÄº¯Êı</span><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'> <span class=SpellE>func</span>()</span><span
+style='font-size:10.5pt;font-family:ËÎÌå;mso-ascii-font-family:Tahoma;mso-fareast-font-family:
+ËÎÌå;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Tahoma;
+mso-bidi-font-family:"Times New Roman";color:#454545;mso-font-kerning:0pt'>£¨±ØĞëÊÇÒ»¸ö¶şÔª²Ù×÷º¯Êı£©ÏÈ¶Ô¼¯ºÏÖĞµÄµÚ</span><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'>1</span><span
+style='font-size:10.5pt;font-family:ËÎÌå;mso-ascii-font-family:Tahoma;mso-fareast-font-family:
+ËÎÌå;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Tahoma;
+mso-bidi-font-family:"Times New Roman";color:#454545;mso-font-kerning:0pt'>£¬</span><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'>2</span><span
+style='font-size:10.5pt;font-family:ËÎÌå;mso-ascii-font-family:Tahoma;mso-fareast-font-family:
+ËÎÌå;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Tahoma;
+mso-bidi-font-family:"Times New Roman";color:#454545;mso-font-kerning:0pt'>¸öÊı¾İ½øĞĞ²Ù×÷£¬µÃµ½µÄ½á¹ûÔÙÓëµÚÈı¸öÊı¾İÓÃ</span><span
+class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:Tahoma;
+mso-bidi-font-family:"Times New Roman";color:#454545;mso-font-kerning:0pt'>func</span></span><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'>()</span><span
+style='font-size:10.5pt;font-family:ËÎÌå;mso-ascii-font-family:Tahoma;mso-fareast-font-family:
+ËÎÌå;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Tahoma;
+mso-bidi-font-family:"Times New Roman";color:#454545;mso-font-kerning:0pt'>º¯ÊıÔËËã£¬×îºóµÃµ½Ò»¸ö½á¹û¡£</span><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><span
+style='font-size:10.5pt;font-family:ËÎÌå;mso-ascii-font-family:Tahoma;mso-fareast-font-family:
+ËÎÌå;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Tahoma;
+mso-bidi-font-family:"Times New Roman";color:#454545;mso-font-kerning:0pt'>Èç£º</span><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><span
+class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:Tahoma;
+mso-bidi-font-family:"Times New Roman";color:#454545;mso-font-kerning:0pt'>def</span></span><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'> <span class=SpellE>myadd</span>(<span
+class=SpellE>x,y</span>): return <span class=SpellE>x+y</span> sum=reduce(<span
+class=SpellE>myadd</span>,(1,2,3,4,5,6,7)) print sum #</span><span
+style='font-size:10.5pt;font-family:ËÎÌå;mso-ascii-font-family:Tahoma;mso-fareast-font-family:
+ËÎÌå;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Tahoma;
+mso-bidi-font-family:"Times New Roman";color:#454545;mso-font-kerning:0pt'>½á¹û¾ÍÊÇÊä³ö</span><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'>1+2+3+4+5+6+7</span><span
+style='font-size:10.5pt;font-family:ËÎÌå;mso-ascii-font-family:Tahoma;mso-fareast-font-family:
+ËÎÌå;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Tahoma;
+mso-bidi-font-family:"Times New Roman";color:#454545;mso-font-kerning:0pt'>µÄ½á¹û¼´</span><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'>28 </span><span
+style='font-size:10.5pt;font-family:ËÎÌå;mso-ascii-font-family:Tahoma;mso-fareast-font-family:
+ËÎÌå;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Tahoma;
+mso-bidi-font-family:"Times New Roman";color:#454545;mso-font-kerning:0pt'>µ±È»£¬</span><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><span
+style='font-size:10.5pt;font-family:ËÎÌå;mso-ascii-font-family:Tahoma;mso-fareast-font-family:
+ËÎÌå;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Tahoma;
+mso-bidi-font-family:"Times New Roman";color:#454545;mso-font-kerning:0pt'>Ò²¿ÉÒÔÓÃ</span><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'>lambda</span><span
+style='font-size:10.5pt;font-family:ËÎÌå;mso-ascii-font-family:Tahoma;mso-fareast-font-family:
+ËÎÌå;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Tahoma;
+mso-bidi-font-family:"Times New Roman";color:#454545;mso-font-kerning:0pt'>µÄ·½·¨£¬¸üÎª¼òµ¥£º</span><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'> sum=reduce(lambda <span
+class=SpellE>x,y:x+y</span>,(1,2,3,4,5,6,7)) print sum&nbsp;&nbsp;&nbsp;&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><span
+class=GramE><span lang=EN-US style='font-size:10.5pt;font-family:Tahoma;
+mso-bidi-font-family:"Times New Roman";color:#454545;mso-font-kerning:0pt'>python</span></span><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'> 3.0.0.0&nbsp;&nbsp;
+reduce<o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><span
+style='font-size:10.5pt;font-family:ËÎÌå;mso-ascii-font-family:Tahoma;mso-fareast-font-family:
+ËÎÌå;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Tahoma;
+mso-bidi-font-family:"Times New Roman";color:#454545;mso-font-kerning:0pt'>½ñÌìÔÚËÑÓÃ</span><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'>python</span><span
+style='font-size:10.5pt;font-family:ËÎÌå;mso-ascii-font-family:Tahoma;mso-fareast-font-family:
+ËÎÌå;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Tahoma;
+mso-bidi-font-family:"Times New Roman";color:#454545;mso-font-kerning:0pt'>Çó½×³ËµÄÊ±ºò</span><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'>, </span><span
+style='font-size:10.5pt;font-family:ËÎÌå;mso-ascii-font-family:Tahoma;mso-fareast-font-family:
+ËÎÌå;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Tahoma;
+mso-bidi-font-family:"Times New Roman";color:#454545;mso-font-kerning:0pt'>ËÑ³öÀ´µÄ×î¼òµ¥µÄÊÇÓÃ</span><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'>reduce</span><span
+style='font-size:10.5pt;font-family:ËÎÌå;mso-ascii-font-family:Tahoma;mso-fareast-font-family:
+ËÎÌå;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Tahoma;
+mso-bidi-font-family:"Times New Roman";color:#454545;mso-font-kerning:0pt'>Õâ¸ö</span><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'>built-in function, </span><span
+style='font-size:10.5pt;font-family:ËÎÌå;mso-ascii-font-family:Tahoma;mso-fareast-font-family:
+ËÎÌå;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Tahoma;
+mso-bidi-font-family:"Times New Roman";color:#454545;mso-font-kerning:0pt'>µ«ÊÇÎÒÓÃ</span><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'>reduce</span><span
+style='font-size:10.5pt;font-family:ËÎÌå;mso-ascii-font-family:Tahoma;mso-fareast-font-family:
+ËÎÌå;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Tahoma;
+mso-bidi-font-family:"Times New Roman";color:#454545;mso-font-kerning:0pt'>µÄÊ±ºò</span><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'>, </span><span
+style='font-size:10.5pt;font-family:ËÎÌå;mso-ascii-font-family:Tahoma;mso-fareast-font-family:
+ËÎÌå;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Tahoma;
+mso-bidi-font-family:"Times New Roman";color:#454545;mso-font-kerning:0pt'>È´±¨</span><span
+class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:Tahoma;
+mso-bidi-font-family:"Times New Roman";color:#454545;mso-font-kerning:0pt'>NameError</span></span><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'>: name 'reduce' is not
+defined. </span><span style='font-size:10.5pt;font-family:ËÎÌå;mso-ascii-font-family:
+Tahoma;mso-fareast-font-family:ËÎÌå;mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:Tahoma;mso-bidi-font-family:"Times New Roman";color:#454545;
+mso-font-kerning:0pt'>ÓÚÊÇÓÖËÑÁËÒ»ÏÂ</span><span lang=EN-US style='font-size:10.5pt;
+font-family:Tahoma;mso-bidi-font-family:"Times New Roman";color:#454545;
+mso-font-kerning:0pt'>,</span><span style='font-size:10.5pt;font-family:ËÎÌå;
+mso-ascii-font-family:Tahoma;mso-fareast-font-family:ËÎÌå;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:Tahoma;mso-bidi-font-family:"Times New Roman";
+color:#454545;mso-font-kerning:0pt'>·¢ÏÖÔÚ</span><span lang=EN-US
+style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:"Times New Roman";
+color:#454545;mso-font-kerning:0pt'>python 3.0.0.0</span><span
+style='font-size:10.5pt;font-family:ËÎÌå;mso-ascii-font-family:Tahoma;mso-fareast-font-family:
+ËÎÌå;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Tahoma;
+mso-bidi-font-family:"Times New Roman";color:#454545;mso-font-kerning:0pt'>ÒÔºó</span><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'>, reduce</span><span
+style='font-size:10.5pt;font-family:ËÎÌå;mso-ascii-font-family:Tahoma;mso-fareast-font-family:
+ËÎÌå;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Tahoma;
+mso-bidi-font-family:"Times New Roman";color:#454545;mso-font-kerning:0pt'>ÒÑ¾­²»ÔÚ</span><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'>built-in function</span><span
+style='font-size:10.5pt;font-family:ËÎÌå;mso-ascii-font-family:Tahoma;mso-fareast-font-family:
+ËÎÌå;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Tahoma;
+mso-bidi-font-family:"Times New Roman";color:#454545;mso-font-kerning:0pt'>ÀïÁË</span><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'>, </span><span
+style='font-size:10.5pt;font-family:ËÎÌå;mso-ascii-font-family:Tahoma;mso-fareast-font-family:
+ËÎÌå;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Tahoma;
+mso-bidi-font-family:"Times New Roman";color:#454545;mso-font-kerning:0pt'>ÒªÓÃËü¾ÍµÃ</span><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'>from <span class=SpellE>functools</span>
+import reduce.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><span
+style='font-size:10.5pt;font-family:ËÎÌå;mso-ascii-font-family:Tahoma;mso-fareast-font-family:
+ËÎÌå;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Tahoma;
+mso-bidi-font-family:"Times New Roman";color:#454545;mso-font-kerning:0pt'>Ïê¼û</span><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'>The fate of reduce() in
+Python 3000<o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'>reduce</span><span
+style='font-size:10.5pt;font-family:ËÎÌå;mso-ascii-font-family:Tahoma;mso-fareast-font-family:
+ËÎÌå;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Tahoma;
+mso-bidi-font-family:"Times New Roman";color:#454545;mso-font-kerning:0pt'>µÄÓÃ·¨</span><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><span
+class=GramE><span lang=EN-US style='font-size:10.5pt;font-family:Tahoma;
+mso-bidi-font-family:"Times New Roman";color:#454545;mso-font-kerning:0pt'>reduce</span></span><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'>(function, sequence[,
+initial]) -&gt; value<o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'>Apply a function of two
+arguments cumulatively to the items of a sequence,<br>
+from left to right, so as to reduce the sequence to a single value.<br>
+For example, <span class=GramE>reduce(</span>lambda x, y: <span class=SpellE>x+y</span>,
+[1, 2, 3, 4, 5]) calculates<br>
+((((1+2)+3)+4)+5). If initial is present, it is placed before the items<br>
+of the sequence in the calculation, and serves as a default when the<br>
+sequence is empty.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><span
+style='font-size:10.5pt;font-family:ËÎÌå;mso-ascii-font-family:Tahoma;mso-fareast-font-family:
+ËÎÌå;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Tahoma;
+mso-bidi-font-family:"Times New Roman";color:#454545;mso-font-kerning:0pt'>ÒâË¼¾ÍÊÇ¶Ô</span><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'>sequence</span><span
+style='font-size:10.5pt;font-family:ËÎÌå;mso-ascii-font-family:Tahoma;mso-fareast-font-family:
+ËÎÌå;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Tahoma;
+mso-bidi-font-family:"Times New Roman";color:#454545;mso-font-kerning:0pt'>Á¬ĞøÊ¹ÓÃ</span><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'>function, </span><span
+style='font-size:10.5pt;font-family:ËÎÌå;mso-ascii-font-family:Tahoma;mso-fareast-font-family:
+ËÎÌå;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Tahoma;
+mso-bidi-font-family:"Times New Roman";color:#454545;mso-font-kerning:0pt'>Èç¹û²»¸ø³ö</span><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'>initial, </span><span
+style='font-size:10.5pt;font-family:ËÎÌå;mso-ascii-font-family:Tahoma;mso-fareast-font-family:
+ËÎÌå;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Tahoma;
+mso-bidi-font-family:"Times New Roman";color:#454545;mso-font-kerning:0pt'>ÔòµÚÒ»´Îµ÷ÓÃ´«µİ</span><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'>sequence</span><span
+style='font-size:10.5pt;font-family:ËÎÌå;mso-ascii-font-family:Tahoma;mso-fareast-font-family:
+ËÎÌå;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Tahoma;
+mso-bidi-font-family:"Times New Roman";color:#454545;mso-font-kerning:0pt'>µÄÁ½¸öÔªËØ</span><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'>, </span><span
+style='font-size:10.5pt;font-family:ËÎÌå;mso-ascii-font-family:Tahoma;mso-fareast-font-family:
+ËÎÌå;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Tahoma;
+mso-bidi-font-family:"Times New Roman";color:#454545;mso-font-kerning:0pt'>ÒÔºó°ÑÇ°Ò»´Îµ÷ÓÃµÄ½á¹ûºÍ</span><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'>sequence</span><span
+style='font-size:10.5pt;font-family:ËÎÌå;mso-ascii-font-family:Tahoma;mso-fareast-font-family:
+ËÎÌå;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Tahoma;
+mso-bidi-font-family:"Times New Roman";color:#454545;mso-font-kerning:0pt'>µÄÏÂÒ»¸öÔªËØ´«µİ¸ø</span><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'>function. </span><span
+style='font-size:10.5pt;font-family:ËÎÌå;mso-ascii-font-family:Tahoma;mso-fareast-font-family:
+ËÎÌå;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Tahoma;
+mso-bidi-font-family:"Times New Roman";color:#454545;mso-font-kerning:0pt'>Èç¹û¸ø³ö</span><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'>initial, </span><span
+style='font-size:10.5pt;font-family:ËÎÌå;mso-ascii-font-family:Tahoma;mso-fareast-font-family:
+ËÎÌå;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Tahoma;
+mso-bidi-font-family:"Times New Roman";color:#454545;mso-font-kerning:0pt'>ÔòµÚÒ»´Î´«µİ</span><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'>initial</span><span
+style='font-size:10.5pt;font-family:ËÎÌå;mso-ascii-font-family:Tahoma;mso-fareast-font-family:
+ËÎÌå;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Tahoma;
+mso-bidi-font-family:"Times New Roman";color:#454545;mso-font-kerning:0pt'>ºÍ</span><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'>sequence</span><span
+style='font-size:10.5pt;font-family:ËÎÌå;mso-ascii-font-family:Tahoma;mso-fareast-font-family:
+ËÎÌå;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Tahoma;
+mso-bidi-font-family:"Times New Roman";color:#454545;mso-font-kerning:0pt'>µÄµÚÒ»¸öÔªËØ¸ø</span><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'>function.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><span
+class=GramE><span lang=EN-US style='font-size:10.5pt;font-family:Tahoma;
+mso-bidi-font-family:"Times New Roman";color:#454545;mso-font-kerning:0pt'>view</span></span><span
+lang=EN-US style='font-size:10.5pt;font-family:Tahoma;mso-bidi-font-family:
+"Times New Roman";color:#454545;mso-font-kerning:0pt'> <span class=SpellE>plaincopy</span>
+to <span class=SpellE>clipboardprint</span>?<br>
+&gt;&gt;&gt; <span class=GramE>from</span> <span class=SpellE>functools</span>
+import reduce&nbsp;&nbsp;&nbsp;<br>
+&gt;&gt;&gt; reduce(lambda <span class=SpellE>x,y</span>: <span class=SpellE>x+y</span>,
+[1, 2, 3])&nbsp;&nbsp;&nbsp;<br>
+6&nbsp;<br>
+&gt;&gt;&gt; reduce(lambda x, y: <span class=SpellE>x+y</span>, [1,2,3],
+9)&nbsp;&nbsp;&nbsp;<br>
+15&nbsp;<br>
+&gt;&gt;&gt; reduce(lambda <span class=SpellE>x,y</span>: <span class=SpellE>x+y</span>,
+[1, 2, 3], 7)&nbsp;&nbsp;&nbsp;<br>
+13&nbsp;<br>
+&gt;&gt;&gt;&nbsp;&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><span
+lang=EN-US style='font-size:9.0pt;font-family:Tahoma;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";color:#454545;
+mso-font-kerning:0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+</body>
+
+</html>
