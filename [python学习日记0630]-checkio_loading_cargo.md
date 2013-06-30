@@ -1,8 +1,8 @@
-###[python学习日记0629]-checkio_space_purchase
+###[python学习日记0629]-checkio_loading_cargo
 
 *by cedrichu*
 
-- [checkio_task_space_purchase](http://www.checkio.org/mission/task/info/spaceship-purchase/python-27/)
+- [checkio_task_loading_cargo](http://www.checkio.org/mission/task/loading-cargo/)
 
 *task:*
 	
